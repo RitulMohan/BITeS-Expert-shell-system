@@ -15,7 +15,7 @@ This project demonstrates the implementation of an expert system using the exper
   
 - Knowledge base with consists of food outlets from BITS hyderabad
 
-- The inference engine uses various parameters to come up with the best possible recommendation using a score based approach
+- The inference engine uses various parameters to come up with the best possible recommendations using a score based approach
 
 ## DEMO 
 <img width="1280" alt="image" src="https://github.com/RitulMohan/BITeS-Expert-shell-system/assets/79750424/d3a12925-3a60-4f2a-9234-8003e8e2c359">
