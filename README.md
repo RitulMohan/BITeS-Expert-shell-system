@@ -1,1 +1,24 @@
 # BITeS-Expert-shell-system
+
+# Food Outlet Recommender
+
+
+## Description
+
+The BITeS Food Outlet Recommender is an expert system-based application built using the experta library in Python. It provides personalized recommendations for food outlets based on user preferences and requirements. By answering a series of questions, the system uses logical reasoning to suggest suitable food outlets that match the user's criteria.
+
+This project demonstrates the implementation of an expert system using the experta library, which offers a rule-based inference engine for creating knowledge-based applications. It showcases how expert systems can be used to provide intelligent recommendations in specific domains.
+
+## Features
+
+- Rule-based inference engine for generating personalized recommendations
+- Knowledge base with domain-specific rules and facts for food outlet recommendations specific to BITS hyderabad 
+
+## Prerequisites
+
+- Python 3.x
+- Install the required dependencies by running the following command:
+ 
+```bash
+pip install experta
+```
