@@ -13,7 +13,9 @@ This project demonstrates the implementation of an expert system using the exper
 
 - Rule-based inference engine for generating personalized recommendations from outlets from our campus
   
-- Knowledge base with domain-specific rules and facts for food outlet recommendations specific to BITS hyderabad 
+- Knowledge base with consists of food outlets from BITS hyderabad
+
+- The inference engine uses various parameters to come up with the best possible recommendation using a score based approach 
 
 ## Prerequisites
 
