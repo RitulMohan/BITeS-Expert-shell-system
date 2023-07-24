@@ -25,7 +25,7 @@ This project demonstrates the implementation of an expert system using the exper
 
 - The expert system is also able to generate more than one responses if it finds more than one outlets which satisfy users query
 <img width="1169" alt="image" src="https://github.com/RitulMohan/BITeS-Expertsystem/assets/79750424/773422f2-b07c-486f-9ae5-9464ee0b4b56">
-- Other examples
+- Other examples   
 <img width="1165" alt="image" src="https://github.com/RitulMohan/BITeS-Expertsystem/assets/79750424/11989fdf-820b-40d3-be58-18ca1fc95710">
 <img width="1169" alt="image" src="https://github.com/RitulMohan/BITeS-Expertsystem/assets/79750424/d14bb936-3736-46f1-bb02-b4fa1d08ecb6">
 
