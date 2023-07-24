@@ -27,7 +27,7 @@ class RecommenderSystem(KnowledgeEngine):
             Restaurant("Chipotle", ["Lunch", "Dinner", "Late night Snack"],"Mess 1", ["South Indian"], "takeaway only", "Expensive"),
             Restaurant("Wich Please!", ["Dinner", "Late night Snack"],"Mess 2", ["Sandwich"], "seating available", "Moderate"),
             Restaurant("SFC",["Dinner", "Late night Snack"],"Mess 2", ["Burger", "Fries"], "seating available", "Moderate"),
-            Restaurant("Fruitful!", ["Dinner"], "CP", ["Desert", "Burger", "Fries"], "seating available", "Expensive"),
+            Restaurant("Fruitful!", ["Dinner"], "CP", ["Dessert", "Burger", "Fries"], "seating available", "Expensive"),
             Restaurant("Agra Chaat",["Lunch", "Dinner"],"CP", ["North Indian"], "seating available", "Budget Friendly"),
             Restaurant("Vijay Vahini Foods",["Lunch", "Dinner"],"CP", ["North Indian", "Biryani", "Chinese"], "seating available", "Moderate"),
             Restaurant("Cafetaria", ["Breakfast", "Lunch", "Dinner"],"Academic Block", ["North Indian", "South Indian", "Desert", "Chinese"], "seating available", "Moderate"),
@@ -38,8 +38,8 @@ class RecommenderSystem(KnowledgeEngine):
         weights = {
             "meal": 600,
             "location":200,
-            "cuisine": 100,
-            "budget": 50,
+            "cuisine": 150,
+            "budget": 25,
             "service": 25
         }
 
@@ -59,18 +59,19 @@ class RecommenderSystem(KnowledgeEngine):
         # Find the indices of the restaurants with the highest scores
         max_scores = max(scores)
         # Find the indices of the restaurants with the highest scores
-        best_restaurant_indices = [i for i, score in sorted(enumerate(scores), key=lambda x: x[1], reverse=True)]
+        best_restaurant_indices = [i for i, score in sorted(enumerate(scores), key=lambda x: x[1], reverse=True) if score >= 900]
 
         if best_restaurant_indices:
-            print("Recommended restaurant:")
-            best_restaurant = restaurants[0]
-            print("Restaurant:", best_restaurant.name)
-            print("meal:", ', '.join(best_restaurant.meal))
-            print("location:", best_restaurant.location)
-            print("Cuisines:", ', '.join(best_restaurant.cuisines))
-            print("Service:", best_restaurant.service)
-            print("Price:", best_restaurant.price)
-            print()
+            print("Recommended restaurants:")
+            for index in best_restaurant_indices:
+                best_restaurant = restaurants[index]
+                print("Restaurant:", best_restaurant.name)
+                print("meal:", ', '.join(best_restaurant.meal))
+                print("location:", best_restaurant.location)
+                print("Cuisines:", ', '.join(best_restaurant.cuisines))
+                print("Service:", best_restaurant.service)
+                print("Price:", best_restaurant.price)
+                print()
         else:
             print("No restaurants found matching the criteria.")
 
@@ -82,10 +83,11 @@ engine = RecommenderSystem()
 engine.reset()
 
 meal1 = input("Enter your preferred meal time (e.g., Breakfast,Lunch, Dinner): ")
-location1 = input("Enter your preferred location: ")
-cuisine1 = input("Enter your preferred cuisine: ")
+location1 = input("Enter your preferred location(e.g., Mess 1,Mess 2,CP, Academic Block): ")
+cuisine1 = input("Enter your preferred cuisine(e.g., North Indian, South Indian,Chinese, Maggi,Biryani etc. ): ")
 service1 = input("Enter your preferred service type (e.g., seating available, takeaway only): ")
 price1 = input("Enter your preferred price range (e.g., Budget Friendly, Moderate, Expensive): ")
 
 engine.declare(UserInput(meal=meal1, location=location1, cuisine=cuisine1, service=service1, price=price1))
 engine.run()
+
