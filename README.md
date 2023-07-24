@@ -22,7 +22,8 @@ This project demonstrates the implementation of an expert system using the exper
 
 
 ## DEMO 
- <img width="801" alt="image" src="https://github.com/RitulMohan/BITeS-Expertsystem/assets/79750424/fb0bd973-214f-47a9-bbf2-4922202ec41f">
+<img width="801" alt="image" src="https://github.com/RitulMohan/BITeS-Expertsystem/assets/79750424/fb0bd973-214f-47a9-bbf2-4922202ec41f">
+<img width="1165" alt="image" src="https://github.com/RitulMohan/BITeS-Expertsystem/assets/79750424/11989fdf-820b-40d3-be58-18ca1fc95710">
 
 
 ## Prerequisites
