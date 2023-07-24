@@ -17,7 +17,8 @@ This project demonstrates the implementation of an expert system using the exper
 
 - The inference engine uses various parameters to come up with the best possible recommendations using a score based approach
 
-  ![image](https://github.com/RitulMohan/BITeS-Expert-shell-system/assets/79750424/512e53a6-6ebc-485c-a6a8-c392ad934f8b)
+ <img width="801" alt="image" src="https://github.com/RitulMohan/BITeS-Expertsystem/assets/79750424/fb0bd973-214f-47a9-bbf2-4922202ec41f">
+
 
 
 ## DEMO 
